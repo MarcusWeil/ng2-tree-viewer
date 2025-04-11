@@ -1,0 +1,24 @@
+<div style="margin-left: 20px;">
+  <div class="tree-container">
+    <!-- Folder rows -->
+    <div class="tree-folder" *ngFor="let folder of node.folders; let i = index">
+      <div class="tree-folder-header" [ngClass]="{ 'selected': folder === selectedNode }" [style.margin-left.px]="'5'" (click)="onNodeClick(folder)">
+        <img src="assets/icons/folder-opened.svg" width="24px" *ngIf="folder.expanded">
+        <img src="assets/icons/folder.svg" width="24px" *ngIf="!folder.expanded">
+        <span class="fs-5">
+          {{ folder.name }}
+        </span>
+      </div>
+      <div class="tree-folder-content" *ngIf="folder.expanded">
+        <app-tree-view-node [node]="folder" (nodeSelected)="onNodeClick($event)" [depth]="depth + 1" [selectedNode]="selectedNode"></app-tree-view-node>
+      </div>
+    </div>
+    <!-- File rows -->
+    <div class="tree-item" *ngFor="let file of node.files" [ngClass]="{ 'selected': file === selectedNode }" [style.margin-left.px]="'5'" (click)="onNodeClick(file)">
+      <img src="assets/icons/file.svg" width="20px" height="20px">
+      <span class="fs-5">
+        {{ file.name }}
+      </span>
+    </div>
+  </div>
+</div>

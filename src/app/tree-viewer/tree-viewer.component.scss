@@ -1,0 +1,218 @@
+.container {
+  max-width: 1800px;
+  width: 100%;
+  padding: 20px;
+}
+
+//SEARCH BAR SECTION
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  right: 33%;
+}
+
+.search-bar input {
+  background-color: #ededed;
+  padding: 10px 60px 10px 60px;
+  border-radius: 20px;
+  border: 1px solid #e4e4e4;
+  font-size: 16px;
+  outline: none;
+  margin-left: 50px;
+}
+.search-bar button{
+  background-color: #ededed;
+  border-radius: 0 20px 20px 0;
+  margin-left: -25px;
+  border: none;
+  padding: 0;
+  img{
+    border-radius: 18px;
+    width: 36px;
+    margin-left: -16px;
+  }
+}
+
+//BREADCRUMB SECTION
+
+.breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  border-radius: 4px;
+}
+
+.breadcrumb > li {
+  display: inline-block;
+}
+
+.breadcrumb > li + li:before {
+  content: "/";
+  padding: 0 5px;
+  color: #b9b9b9;
+}
+
+.breadcrumb > .active {
+  color: #777777;
+}
+
+//TREE VIEWER SECTION
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: relative;
+}
+
+.tree-container-wrapper {
+  width: 107%;
+  height: 70vh;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+//ScrollBar definitions
+.tree-container-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.tree-container-wrapper::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #a8b0bd;
+}
+
+
+.tree-container-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+
+.column {
+  flex: 2;
+  min-width: 300px;
+}
+
+.tree-column {
+  max-width: 40%;
+  position: relative;
+}
+
+// SELECTED NODE SECTION
+.data-column {
+  flex: 2;
+  max-width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.tree-column::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -50px;
+  bottom: 0;
+  width: 1px;
+  background-color: #ccc;
+}
+
+.node-details {
+  text-align: center;
+}
+
+.node-details svg {
+  margin-bottom: 20px;
+}
+
+.node-details h2 {
+  margin-bottom: 10px;
+}
+
+.node-details span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+//BUTTONS SECTION
+
+.btn {
+  display: inline-flex;
+  padding: 0.75rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  margin: 40px 20px 0 0;
+
+  border-radius: 0.625rem;
+  border-color: transparent;
+  background: #94BC00;
+
+  color:  #FFF;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.25rem;
+}
+.btn:hover {
+  background: #6F8D00;
+}
+.btn-secondary {
+  background: #FFF;
+  color: #94BC00;
+  border: 1px solid #94BC00;
+}
+.btn-secondary:hover {
+  background: rgba(204, 212, 225, 0.20);
+  border: 1px solid #6F8D00;
+}
+.user-btn{
+  position: absolute;
+  top: 12px;
+  right: 36px;
+  background-color: white;
+  border: none;
+}
+.logout-btn{
+  background-color: #fff;
+  height: 65px;
+}
+.logout-btn:hover{
+  background-color: #ececec;
+}
+
+//MAT-MENU DEEP
+::ng-deep .customize {
+  width: 60px !important;
+  padding: 0 !important;
+  background-color: #fff;
+  border-radius: 10px !important;
+}
+::ng-deep .customize:hover {
+  background-color: #ececec;
+}
+::ng-deep .mat-menu-content {
+  padding-top: 0 !important;
+  padding-bottom: 1px !important;
+}
+::ng-deep .mat-menu-item {
+  padding: 0 !important;
+}
+//MAT-MENU END
+
+@media (max-width: 500px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .tree-column,
+  .data-column {
+    max-width: 100%;
+  }
+
+  .tree-column::after {
+    display: none;
+  }
+}

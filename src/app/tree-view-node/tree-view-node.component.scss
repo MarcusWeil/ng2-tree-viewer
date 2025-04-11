@@ -1,0 +1,60 @@
+.tree-container {
+  position: relative;
+}
+
+.tree-folder {
+  position: relative;
+  margin-left: 20px;
+}
+
+.tree-folder-header {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.tree-folder-header img {
+  margin-right: 5px;
+}
+
+.tree-item {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.tree-folder-header:hover,
+.tree-item:hover {
+  background-color: #f0f7fc;
+}
+// SELECTED NODE BORDER
+.tree-container {
+  .tree-folder-header,
+  .tree-item {
+    &.selected {
+      border: 1px solid #62a8d1;
+      background-color: #f0f7fc;
+    }
+  }
+}
+
+//HORIZONTAL HIERARCHY LINE FOLDER
+.tree-container .tree-folder::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  width: 20px;
+  height: 0;
+  border-top: 1px dotted #67b2dd;
+}
+//VERTICAL HIERARCHY LINE FOLDER
+.tree-container::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 14px;
+  left: 0;
+  border-left: 1px dotted #67b2dd;
+}

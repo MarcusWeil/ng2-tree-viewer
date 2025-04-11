@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="user-info">
+      <button class="user-btn fs-5" [matMenuTriggerFor]="menu">
+        <img src="assets/icons/user.svg" alt="User Icon" width="18px">
+        Administrator
+        <span><img src="../../assets/icons/icon_chevron_down.svg" width="20px"></span>
+      </button>
+      <mat-menu #menu="matMenu" class="customize">
+        <button mat-menu-item class="logout-btn">
+          <span style="margin-left: 30px; font-size: 18px;">Logout</span>
+        </button>
+      </mat-menu>
+    </div>
+  <div class="container">
+    <!-- Search bar -->
+    <div class="search-bar mb-3">
+      <input type="text" placeholder="Search folders or files">
+      <button><img src="assets/icons/search.svg"></button>
+    </div>
+  </div>
+  <!-- Breadcrumbs -->
+  <ul class="breadcrumb">
+    <li *ngFor="let crumb of breadcrumbs; let isLast = last" [ngClass]="{ 'active': isLast }">
+      {{ crumb }}
+      <span class="divider" *ngIf="!isLast"></span>
+    </li>
+  </ul>
+
+<div class="content">
+  <div class="column tree-column">
+    <div class="tree-container-wrapper" *ngIf="structure">
+      <app-tree-view-node [node]="structure" (nodeSelected)="selectNode($event)" [selectedNode]="selectedNode"></app-tree-view-node>
+    </div>
+  </div>
+  <div class="column data-column">
+    <div *ngIf="selectedNode" class="node-details">
+      <img *ngIf="isFolder(selectedNode)" src="assets/icons/folder.svg" width="100" height="100" alt="Folder Icon">
+      <img *ngIf="!isFolder(selectedNode)" src="assets/icons/file.svg" width="100" height="100" alt="File Icon">
+      <h2>{{ selectedNode.name }}</h2>
+      <div *ngIf="!isFolder(selectedNode); else folderContent">
+        <span>Size: {{ selectedNode.size }}</span>
+        <span>Last Updated: {{ selectedNode.lastModified }}</span>
+        <div class="buttons">
+          <button class="btn btn-primary">Download</button>
+          <button class="btn btn-secondary">Subscribe</button>
+        </div>
+      </div>
+      <ng-template #folderContent>
+        <span *ngIf="selectedNode?.files">Files: {{ selectedNode.files?.length }}</span>
+        <span *ngIf="selectedNode?.folders">Folders: {{ selectedNode.folders?.length }}</span>
+      </ng-template>
+    </div>
+  </div>
+</div>
+
+</div>

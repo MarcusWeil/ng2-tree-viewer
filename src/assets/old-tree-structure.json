@@ -1,0 +1,127 @@
+{
+    "name": "Root",
+    "folders": [
+        {
+            "name": "Customer One",
+            "folders": [
+                {
+                    "name": "Project One",
+                    "folders": [
+                        {
+                            "name": "DOC Design",
+                            "folders": [
+                                {
+                                    "name": "Design Spec",
+                                    "files": [
+                                        {"name": "Design Spec", "size": "1.2MB", "lastModified": "2024-01-04 at 11:12"},
+                                        {"name": "Design Mockup", "size": "2.6MB", "lastModified": "2023-12-03 at 06:47"}
+                                    ]
+                                },
+                                {
+                                    "name": "Design Mockup",
+                                    "folders": [
+                                        {
+                                            "name": "Design Spec",
+                                            "folders": [
+                                                {"name": "Design Teste 1",
+                                                    "files": [
+                                                        {"name": "Design Spec", "size": "1.2MB", "lastModified": "2021-01-04 at 18:15"}
+                                                    ]
+                                                },
+                                                {"name": "Design Teste 2"}
+                                            ]
+                                        },
+                                        {"name": "Design Mockup"}
+                                    ]
+                                }
+                            ],
+                            "files": [
+                                {"name": "Design Spec", "size": "1.2MB", "lastModified": "2021-01-04 at 18:15"},
+                                {"name": "Design Mockup", "size": "2.6MB", "lastModified": "2021-01-04 at 18:15"}
+                            ]
+                        },
+                        {
+                            "name": "DOC Construction",
+                            "files": [
+                                {"name": "Construction Set", "size": "3.2MB", "lastModified": "2022-04-05"},
+                                {"name": "Mapping Field", "size": "3.45Kb", "lastModified": "2021-03-07"},
+                                {"name": "Legal Docs 01", "size": "3.45Kb", "lastModified": "2021-01-04 at 18:15"},
+                                {"name": "Legal Docs 02", "size": "3.45Kb", "lastModified": "2024-01-04 at 11:12"},
+                                {"name": "Legal Docs 03", "size": "3.45Kb", "lastModified": "2021-01-04 at 18:15"}
+                            ]
+                        },
+                        {
+                            "name": "DOC Shipping",
+                            "files": [
+                                {"name": "Packing List", "size": "3.45Kb"},
+                                {"name": "Pod Proof of Delivery", "size": "3.45Kb"}
+                            ]
+                        }
+                    ]
+                },
+                {"name": "Project 2"}
+            ]
+        },
+        {
+            "name": "Customer Two",
+            "folders": [
+                {"name": "Project 1"},
+                {"name": "Project 2"},
+                {
+                    "name": "Project 3",
+                    "folders": [
+                        {
+                            "name": "Technical Documents",
+                            "files": [
+                                {"name": "Technical Spec", "size": "2.5MB", "lastModified": "2023-07-15"},
+                                {"name": "User Manual", "size": "1.8MB", "lastModified": "2023-06-20"}
+                            ]
+                        },
+                        {
+                            "name": "Designs",
+                            "folders": [
+                                {"name": "Drafts"},
+                                {"name": "Final Versions"},
+                                {"name": "Miscellaneous Files",
+                                    "files": [
+                                        {"name": "Misc File 1", "size": "500KB", "lastModified": "2024-05-24"},
+                                        {"name": "Misc File 2", "size": "800KB", "lastModified": "2024-05-23"}
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "files": [
+                        {"name": "Project Summary", "size": "1.5MB", "lastModified": "2024-05-22"},
+                        {"name": "Project Plan", "size": "2.2MB", "lastModified": "2024-05-21"}
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Customer Three",
+            "folders": [
+                {
+                    "name": "Project X",
+                    "folders": [
+                        {
+                            "name": "Research",
+                            "folders": [
+                                {"name": "Data"},
+                                {"name": "Analysis"}
+                            ]
+                        },
+                        {"name": "Reports"}
+                    ]
+                },
+                {
+                    "name": "Project Y",
+                    "folders": [
+                        {"name": "Marketing Material"},
+                        {"name": "Sales Reports"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

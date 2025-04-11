@@ -1,0 +1,112 @@
+{
+    "tree": [
+      {
+        "id": 1,
+        "parent": null,
+        "directoryId": "Customer One",
+        "directoryName": "customer",
+        "documentTemplateId": null
+      },
+      {
+        "id": 2,
+        "parent": null,
+        "directoryId": "Customer Two",
+        "directoryName": "customer",
+        "documentTemplateId": null
+      },
+      {
+        "id": 3,
+        "parent": null,
+        "directoryId": "Customer Three",
+        "directoryName": "customer",
+        "documentTemplateId": null
+      },
+      {
+        "id": 4,
+        "parent": 1,
+        "directoryId": "Project One",
+        "directoryName": "project",
+        "documentTemplateId": 1
+      },
+      {
+        "id": 5,
+        "parent": 1,
+        "directoryId": "Project 2",
+        "directoryName": "project",
+        "documentTemplateId": 1
+      },
+      {
+        "id": 6,
+        "parent": 2,
+        "directoryId": "Project 1",
+        "directoryName": "project",
+        "documentTemplateId": 1
+      },
+      {
+        "id": 7,
+        "parent": 2,
+        "directoryId": "Project 2",
+        "directoryName": "project",
+        "documentTemplateId": 1
+      },
+      {
+        "id": 8,
+        "parent": 2,
+        "directoryId": "Project 3",
+        "directoryName": "project",
+        "documentTemplateId": 1
+      },
+      {
+        "id": 9,
+        "parent": 3,
+        "directoryId": "Project X",
+        "directoryName": "project",
+        "documentTemplateId": null
+      },
+      {
+        "id": 10,
+        "parent": 3,
+        "directoryId": "Project Y",
+        "directoryName": "project",
+        "documentTemplateId": null
+      }
+    ],
+    "template": [
+      {
+        "id": 1,
+        "directory": [
+          {
+            "name": "DOC Construction",
+            "file": [
+              {
+                "name": "Construction Set",
+                "multiple": false
+              },
+              {
+                "name": "Mapping Field",
+                "multiple": false
+              },
+              {
+                "name": "Legal Docs",
+                "multiple": true
+              }
+            ]
+          },
+          {
+            "name": "DOC Shipping",
+            "file": [
+              {
+                "name": "Packing List",
+                "multiple": false
+              },
+              {
+                "name": "Pod Proof of Delivery",
+                "multiple": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
