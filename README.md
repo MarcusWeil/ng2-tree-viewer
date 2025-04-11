@@ -2,26 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
 
-## Development server
+## TreeViewer Main Scene
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![{7E132905-F7DC-49A0-BD3A-2F54DC12FA57}](https://github.com/user-attachments/assets/7dbb6fe0-e83c-4ec0-b9e0-97322f3880fd)
 
-## Code scaffolding
+This repository is dedicated to organizing and managing a structured set of folders and files. Its primary focus is to ensure efficient handling, easy navigation, and optimized storage for project-related resources.
+![{1AEB05ED-FA73-41A6-82D1-839577792876}](https://github.com/user-attachments/assets/4c09f28a-cf73-4051-bd05-add65392c092)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
